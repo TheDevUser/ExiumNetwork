@@ -3,16 +3,20 @@ import commands as cmd
 import getpass
 import os
 import requests
+import functions as functions 
 
 print(graphics.loading)
 
 combolist = open('combolist.txt').read().splitlines()
 
-clear = lambda: os.system('clear')
+clr = lambda: os.system('clear')
 
 choice = input('login or register: ')
 
 #login
+
+auth = False
+
 if choice == 'login':
     print('Please enter a username and password')
     user = input('Username: ')
@@ -55,27 +59,29 @@ if choice == 'register':
       auth = True
 
 if auth:
-  clear()
+  clr()
   print(graphics.copyright)
   while True:
-    cmdinput =       input("\033[32muser@exiumnetwork\033[0m:\033[36m∼\033[0m$ ")
+    cmdinput =input("\033[32muser@exiumnetwork\033[0m:\033[36m∼\033[0m$ ")
 
     if cmdinput == "help":
       print("\nno help for you L\n")
     elif cmdinput == "useless":
       print("\nwhat did u think this would do\n")
     elif cmdinput == "clear":
-      clear()
+      clr()
       print(graphics.copyright)
     elif cmdinput == "neofetch":
       print(graphics.neofetchgraph)
-    elif cmdinput == "pkg install":
-      input1 = ("")
-      r = requests.get("https://pastebin.com/raw/BChufCXg")
-      pkgfile = open("mypackage.py", "x")
-      pkgfile.write(r.text)
-      pkgfile.close()
+    elif cmdinput.startswith("pkg"):
+
+      functions.Pkg(cmdinput)
+      
     elif cmdinput == "run":
       exec(open("./mypackage.py").read())
+    elif cmdinput == "credits":
+      print("Ezreali - Everything")
     else:
-      print("\n\033[31m" + "'\033[4m" + cmdinput + "\033[0m\033[31m'" + " is an invalid command! Type 'help'' for a list of commands.\n")
+
+      if cmdinput.strip() != "":
+        print("\n\033[31m" + "'\033[4m" + cmdinput + "\033[0m\033[31m'" + " is an invalid command! Type 'help'' for a list of commands.\n")

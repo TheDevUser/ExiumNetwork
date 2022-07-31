@@ -20,15 +20,15 @@ Welcome to Exium OS!
 """)
 
 neofetchgraph = ("""
-    \033[31mZBGGGGGGGGGGGGGGB~  PP~        ?BBB7\033[31m\033[1m     user\033[37m@\033[31mexuimnetwork\033[0m            
-    \033[31mY@@@@@@@@@@@@@@@@7  B@@P^      J@@@J\033[31m\033[1m     -----------------\033[0m   
-    \033[31m                    Y@@@@5^    J@@@J\033[31m\033[1m     OS:\033[0m Exium OS 1.1.2022\033[0m   
-    \033[31mY@@@@@@@@@@@@@@J     ~P@@@@5^  J@@@J\033[31m\033[1m     Host:\033[0m Exium Enviorment\033[0m   
-    \033[31mY@@@@@@@@@@@@@@J    ^  ~G@@@@5:J@@@J\033[31m\033[1m     Shell:\033[0m Not Bash\033[0m   
-    \033[31mY@@@#GGGGGGGGGGJ    BB!  ~G@@@&#@@@J\033[31m\033[1m     Theme:\033[0m Default\033[0m   
-    \033[31mY@@@?               B@@G:  !G@@@@@@J\033[31m\033[1m     Version:\033[0m 1st Iteration\033[0m   
-    \033[31mY@@@Y               B@@@~    !G@@@@J\033[31m\033[1m     Provider:\033[0m Exium Network\033[0m   
-    \033[31mY@@@@@@@@@@@@@@@@7  B@@@~      !B@@J\033[31m\033[1m     Communications:\033[0m N/A\033[0m   
-    \033[31m!#BBBBBBBBBBBBBB#!  5BBB^        7B?\033[31m\033[1m     Terminal:\033[0m N/A\033[0m   
+    \033[1m\033[31mZBGGGGGGGGGGGGGGB~  PP~        ?BBB7\033[31m\033[1m     user\033[37m@\033[31mexuimnetwork\033[0m            
+    \033[1m\033[31mY@@@@@@@@@@@@@@@@7  B@@P^      J@@@J\033[31m\033[1m     -----------------\033[0m   
+    \033[1m\033[31m                    Y@@@@5^    J@@@J\033[31m\033[1m     OS:\033[0m Exium OS 1.1.2022\033[0m   
+    \033[1m\033[31mY@@@@@@@@@@@@@@J     ~P@@@@5^  J@@@J\033[31m\033[1m     Host:\033[0m Exium Enviorment\033[0m   
+    \033[1m\033[31mY@@@@@@@@@@@@@@J    ^  ~G@@@@5:J@@@J\033[31m\033[1m     Shell:\033[0m Not Bash\033[0m   
+    \033[1m\033[31mY@@@#GGGGGGGGGGJ    BB!  ~G@@@&#@@@J\033[31m\033[1m     Theme:\033[0m Default\033[0m   
+    \033[1m\033[31mY@@@?               B@@G:  !G@@@@@@J\033[31m\033[1m     Version:\033[0m 1st Iteration\033[0m   
+    \033[1m\033[31mY@@@Y               B@@@~    !G@@@@J\033[31m\033[1m     Provider:\033[0m Exium Network\033[0m   
+    \033[1m\033[31mY@@@@@@@@@@@@@@@@7  B@@@~      !B@@J\033[31m\033[1m     Communications:\033[0m N/A\033[0m   
+    \033[1m\033[31m!#BBBBBBBBBBBBBB#!  5BBB^        7B?\033[31m\033[1m     Terminal:\033[0m N/A\033[0m   
 
 """)
