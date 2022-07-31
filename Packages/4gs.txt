@@ -1,2 +1,0 @@
-x = "your my code slave"
-print(x)

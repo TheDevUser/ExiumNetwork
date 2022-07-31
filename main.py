@@ -5,11 +5,13 @@ import os
 import requests
 import functions as functions 
 
+helplist = requests.get("https://pastebin.com/raw/Z4G5MXbc")
+
 print(graphics.loading)
 
 combolist = open('combolist.txt').read().splitlines()
 
-clr = lambda: os.system('clear')
+clr = os.system('cls' if os.name == 'nt' else 'clear')
 
 choice = input('login or register: ')
 
@@ -65,7 +67,9 @@ if auth:
     cmdinput =input("\033[32muser@exiumnetwork\033[0m:\033[36m∼\033[0m$ ")
 
     if cmdinput == "help":
-      print("\nno help for you L\n")
+      print()
+      print(helplist.text)
+      print()
     elif cmdinput == "useless":
       print("\nwhat did u think this would do\n")
     elif cmdinput == "clear":
