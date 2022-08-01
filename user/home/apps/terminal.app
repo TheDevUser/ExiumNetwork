@@ -1,3 +1,4 @@
+import os
 
 shelllogo = ("""
 
@@ -8,3 +9,9 @@ shelllogo = ("""
 ███████║██║  ██║███████╗███████╗███████╗
 
  """)
+
+print(shelllogo)
+
+while True:
+    shellinput = input(">>> ")
+    os.system(shellinput)

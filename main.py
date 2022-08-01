@@ -1,17 +1,32 @@
-import dependencies.graphics as graphics
-import commands as cmd
+import boot.reg.system_cli.graphics as graphics
 import getpass
 import os
 import requests
-import functions as functions 
+import boot.reg.system_func.functions as functions 
+
+useros = str(os.name).capitalize()
+
+print(f"{useros} Detected")
+
+
+if useros == 'Windows':
+  clr = lambda: os.system('cls')
+elif useros == 'Linux':
+  clr = lambda: os.system('clear')
+elif useros == 'Darwin':
+  clr = lambda: os.system('clear')
+elif useros == "Posix":
+  clr = lambda: os.system('clear')
+else:
+  clr = lambda: os.system('clear')
+
+
 
 helplist = requests.get("https://pastebin.com/raw/Z4G5MXbc")
 
 print(graphics.loading)
 
 combolist = open('combolist.txt').read().splitlines()
-
-clr = lambda: os.system('clear')
 
 choice = input('login or register: ')
 
@@ -77,12 +92,12 @@ if auth:
       print(graphics.copyright)
     elif cmdinput == "neofetch":
       print(graphics.neofetchgraph)
-    elif cmdinput.startswith("pkg"):
+    elif cmdinput.startswith("app"):
 
       functions.Pkg(cmdinput)
       
     elif cmdinput == "terminal":
-      exec(open("./user/apps/terminal.py").read())
+      exec(open("./user/apps/terminal/terminal.py").read())
     elif cmdinput == "credits":
       print("Ezreali - Everything")
     else:
