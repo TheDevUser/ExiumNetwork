@@ -1,4 +1,4 @@
-import graphics as graphics
+import dependencies.graphics as graphics
 import commands as cmd
 import getpass
 import os
@@ -11,7 +11,7 @@ print(graphics.loading)
 
 combolist = open('combolist.txt').read().splitlines()
 
-clr = os.system('cls' if os.name == 'nt' else 'clear')
+clr = lambda: os.system('clear')
 
 choice = input('login or register: ')
 
@@ -81,8 +81,8 @@ if auth:
 
       functions.Pkg(cmdinput)
       
-    elif cmdinput == "run":
-      exec(open("./mypackage.py").read())
+    elif cmdinput == "terminal":
+      exec(open("./user/apps/terminal.py").read())
     elif cmdinput == "credits":
       print("Ezreali - Everything")
     else:
